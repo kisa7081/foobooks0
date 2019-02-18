@@ -2,6 +2,5 @@
 
 $booksJson = file_get_contents('books.json');
 
-json_decode($booksJson);
+$books = json_decode($booksJson, true);
 
-dump($booksJson);
